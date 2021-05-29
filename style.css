@@ -4,6 +4,15 @@
     color: black;
 }
 
+:root {
+  --color-lightGrey: #cacaca;
+  
+  /* button colors */
+  --color-circles: #242424;
+  --color-btn: #1b1b1b;
+  --color-btn-shadow: rgba(15, 15, 15, 0.2);
+}
+
 ::-moz-selection { 
   background: black;
   color: white;
@@ -15,58 +24,55 @@
 }
 /* Selection style (source: https://css-tricks.com/almanac/selectors/s/selection/) */
 
-
 h1 {
     font-family: 'Work Sans', sans-serif;
-    text-transform: uppercase;
     font-weight: 600;
-    position: absolute;
-    margin: auto;
+    font-size: 2em;
+    text-transform: uppercase;
     text-align: center;
-    width: 100%;
-    top: 45%;
+    margin: 300px 0 30px 0;
 }
 
 .info {
-    /* font-family: 'Work Sans', sans-serif; */
     font-family: monospace;
-    text-transform: uppercase;
     font-weight: 300;
-    position: absolute;
-    margin: auto;
+    text-transform: uppercase;
     text-align: center;
-    width: 100%;
-    bottom: 5%;
+    position: absolute;
+    bottom: 3%;
+    left: 10%;
+    color: var(--color-lightGrey);
 }
 
 .info2 {
-    /* font-family: 'Work Sans', sans-serif; */
     font-family: monospace;
-    text-transform: uppercase;
     font-weight: 300;
-    position: absolute;
-    margin: auto;
+    text-transform: uppercase;
     text-align: center;
-    width: 100%;
-    bottom: 8%;
+    list-style:none;
+    position: absolute;
+    bottom: 13%;
 }
 
 strong {
     font-weight: 400;
+    color: var(--color-lightGrey);
 }
 
-div {
+.menu {
   position: absolute;
+  width: 25%;
+  height: 100vh;
+  left: 0;
   text-align: center;
-  align-content: center;
-  width: 100%;
-  bottom: 44%;
 }
 
 .showreel {
-  width: 100vw;
-  height: 100vh;
-  filter: opacity(30%);
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
 }
 
 
@@ -104,12 +110,6 @@ div {
     transition: all ease-in-out 0.5s;
     background-repeat: no-repeat;
   }
-
-  :root {
-    --color-circles: #242424;
-    --color-btn: #1b1b1b;
-    --color-btn-shadow: rgba(15, 15, 15, 0.2);
-}
 
   .bubbly-button:before {
     display: none;
